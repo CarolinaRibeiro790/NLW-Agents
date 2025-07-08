@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLW Agents</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -15,8 +16,28 @@
 
     <main>
         <section>
-            <h2>Assistente de Meta</h2>
-            <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+            <div>
+                <h2>Assistente de Meta</h2>
+                <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+                <form id="form" action="">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                    <select id="gameSelect">
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">Lol</option>
+                        <option value="csgo">CS:GO</option>
+                    </select>
+
+                    <input id="questionInput" type="text" placeholder="Ex: Melhor build para ADC..." required>
+
+                    <button id="askButton">Perguntar</button>
+                </form>
+
+                <div id="aiResponse">
+                    <div class="response-content"></div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
