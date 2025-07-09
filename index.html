@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLW Agents</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 
                     <select id="gameSelect">
                         <option value="valorant">Valorant</option>
-                        <option value="lol">Lol</option>
+                        <option value="lol">League of Lengends</option>
                         <option value="csgo">CS:GO</option>
                     </select>
 
@@ -34,12 +34,14 @@
                     <button id="askButton">Perguntar</button>
                 </form>
 
-                <div id="aiResponse">
+                <div id="aiResponse" class="hidden">
                     <div class="response-content"></div>
                 </div>
             </div>
         </section>
     </main>
 </body>
+ <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<script src="./script.js"></script>
 
 </html>
